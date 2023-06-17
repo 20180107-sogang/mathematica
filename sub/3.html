@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../img/3.png" />
+    <title>ㅤ</title>
+    <style>
+      @font-face {
+        font-family: "FC";
+        src: url("../font/Frunchy.ttf") format("truetype");
+      }
+      html {
+        margin: 0;
+        padding: 10px;
+      }
+      canvas {
+        display: block;
+      }
+      body {
+        background-color: black;
+        height: 100vh;
+        margin: 0;
+        padding: 15px !important;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: none;
+      }
+      #print {
+        font-family: "FC";
+        font-weight: bold;
+        background-color: black;
+        border: none;
+        color: white;
+        text-shadow: 0 0 5px white, 0 0 15px white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 4vh;
+        margin: 10px 0 0 0;
+        cursor: pointer;
+      }
+      #dropzone {
+        font-family: "FC";
+        font-size: 4vh;
+        position: absolute;
+        text-shadow: 0 0 5px white, 0 0 15px white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        border: none;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+      }
+      #back {
+        position: absolute;
+        top: 30px;
+        left: 45px;
+        font-family: "FC";
+        font-weight: bold;
+        background-color: black;
+        border: none;
+        color: white;
+        text-shadow: 0 0 5px white, 0 0 15px white;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 5vh;
+        margin: 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <main></main>
+    <button id="back" onclick="history.back()"><</button>
+    <div id="dropzone">
+      <p>Drag and drop image file here</p>
+    </div>
+    <script src="3.js"></script>
+    <button id="print" onclick="downloadPoster()">PRINT</button>
+  </body>
+</html>
